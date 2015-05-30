@@ -42,7 +42,8 @@ body {
 	display: block;
 }
 
-.load {
+.load 
+.title {
 	text-align: center;
 	color: #fff;
 	font-family: Arial, sans-serif;
