@@ -1,20 +1,20 @@
 ##Usage
 
 ```
-var fluid,
-	$item;
-
+var fluid;
 imagesLoaded( $('.container'), function( instance ) { 
-		fluid = new $('.container').fluid({col: 3}); // no of coloumns
+	fluid = new $('.container').fluid({col: 3}); // no of coloumns
 });
 ```
 
-###Add (fluid.add(items))
+###Add 
+
+####fluid.add(items)
 
 ```
 var $items = [$('<div class="item"> <img src="images/1.jpg" alt=""> </div>')];
-	imagesLoaded( $items, function() {
-		fluid.add($items);
+imagesLoaded( $items, function() {
+	fluid.add($items);
 });
 ```
 
