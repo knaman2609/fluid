@@ -11,19 +11,6 @@
 			return;
 		}
 
-		var obj = {}; // obj to be returned 
-
-		obj.col = options.col,
-		obj.spacingX = options.spacingX || 10; // defaults
-		obj.spacingY = options.spacingY || 10; // defaults	
-		obj.container = this,
-		obj.contWidth = this.width(),
-		obj.actWidth = ((obj.contWidth - obj.spacingX*(obj.col-1)).toFixed(2))*1,
-		obj.itemWidth = ((obj.actWidth/obj.col).toFixed(2))*1,
-		obj.top = [],
-		obj.len = 0,
-		obj.add = add;
-
 		var add = function ($items) {
 			if (typeof $items == 'undefined') return;
 
@@ -99,6 +86,19 @@
 				});
 			});
 		}
+
+		var obj = {}; // obj to be returned 
+
+		obj.col = options.col,
+		obj.spacingX = options.spacingX || 10; // defaults
+		obj.spacingY = options.spacingY || 10; // defaults	
+		obj.container = this,
+		obj.contWidth = this.width(),
+		obj.actWidth = ((obj.contWidth - obj.spacingX*(obj.col-1)).toFixed(2))*1,
+		obj.itemWidth = ((obj.actWidth/obj.col).toFixed(2))*1,
+		obj.top = [],
+		obj.len = 0,
+		obj.add = add;
 
 		positonEls(); // start
 

@@ -21,7 +21,7 @@ body {
 
 .container {
 	width: 600px;
-	margin: 20px auto;
+	margin: 20px auto;	
 	background: #334864;
 	padding: 10px;
 }
@@ -31,6 +31,7 @@ body {
 }
 
 .item {
+	display: none;
 	position: absolute;
 	background: #fff;
 	border: 10px solid #fff;

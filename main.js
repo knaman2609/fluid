@@ -2,7 +2,10 @@ var fluid,
 	$item;
 
 imagesLoaded( $('.container_inner'), function() {
-	fluid = new $('.container_inner').fluid({col: 3, spacingX: 20, spacingY: 20});
+
+	$('.container_inner .item').css('display', 'block');
+	fluid = new $('.container_inner').fluid({col: 3, spacingX: 20, spacingY: 20	});
+	
 });
 
 $(document).click(function() {
