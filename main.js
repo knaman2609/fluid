@@ -1,11 +1,15 @@
 var fluid,
-	$item;
+	$item,
+	item = $('.container_inner .item');
 
-imagesLoaded( $('.container_inner'), function() {
+item.css('display', 'block');
+imagesLoaded($('.container_inner'), function() {
 
-	$('.container_inner .item').css('display', 'block');
+	item.css('display', 'block');
+	$('.load').css('display', 'none');
+
 	fluid = new $('.container_inner').fluid({col: 3, spacingX: 20, spacingY: 20	});
-	
+
 });
 
 $(document).click(function() {

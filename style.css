@@ -31,7 +31,6 @@ body {
 }
 
 .item {
-	display: none;
 	position: absolute;
 	background: #fff;
 	border: 10px solid #fff;
@@ -40,5 +39,11 @@ body {
 .item img {
 	width: 100%;
 	display: block;
+}
+
+.load {
+	text-align: center;
+	color: #fff;
+	font-family: Arial, sans-serif;
 }
 /*~~[end]~~*/
