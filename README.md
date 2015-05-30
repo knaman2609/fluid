@@ -2,8 +2,8 @@
 
 ```
 var fluid;
-imagesLoaded( $('.container_inner'), function() {
-	fluid = new $('.container_inner').fluid({col: 3, spacingX: 20, spacingY: 20});
+imagesLoaded( $('.container'), function() {
+	fluid = new $('.container').fluid({col: 3, spacingX: 20, spacingY: 20});
 });
 ```
 
