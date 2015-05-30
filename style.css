@@ -15,24 +15,29 @@ img {
 
 /* css */
 body {
-	background: #C1E4FF;
+	background: #080F18;
 	padding: 20px 0;
 }
 
 .container {
 	width: 600px;
-	margin: 20px auto 0;
+	margin: 20px auto;
+	background: #334864;
+	padding: 10px;
+}
+
+.container_inner {
 	position: relative;
 }
 
 .item {
-	width: 33.33%;
 	position: absolute;
+	background: #fff;
+	border: 10px solid #fff;
 }
 
 .item img {
-	display: block;
 	width: 100%;
+	display: block;
 }
-
 /*~~[end]~~*/

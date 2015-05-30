@@ -1,9 +1,8 @@
 var fluid,
 	$item;
 
-imagesLoaded( $('.container'), function( instance ) {
-	fluid = new $('.container').fluid({col: 3});
-	console.log(fluid);
+imagesLoaded( $('.container_inner'), function() {
+	fluid = new $('.container_inner').fluid({col: 3, spacingX: 20, spacingY: 20});
 });
 
 $(document).click(function() {

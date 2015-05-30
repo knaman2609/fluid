@@ -2,10 +2,17 @@
 
 ```
 var fluid;
-imagesLoaded( $('.container'), function( instance ) { 
-	fluid = new $('.container').fluid({col: 3}); // no of coloumns
+imagesLoaded( $('.container_inner'), function() {
+	fluid = new $('.container_inner').fluid({col: 3, spacingX: 20, spacingY: 20});
 });
 ```
+
+col = number of coloumns [required]
+
+spacingX = horizontal width between two items [default = 10]
+
+spacingY = vertical width between two items [default = 10]
+
 
 ###Add 
 
@@ -19,15 +26,16 @@ imagesLoaded( $items, function() {
 ```
 
 
+
 ###Css
 
 ```
 .container {
 	width: 600px;
+	position: relative;
 }
 
 .item {
-	width: 33.33%; // for three coloumns
 	position: absolute;
 }
 
