@@ -34,6 +34,7 @@ body {
 	position: absolute;
 	background: #fff;
 	border: 10px solid #fff;
+	display: none;
 }
 
 .item img {

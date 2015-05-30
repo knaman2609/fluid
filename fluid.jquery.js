@@ -23,7 +23,7 @@
 			for (var i=0 ;i< $items.length; i++) {
 
 				container.append($items[i]);
-				$items[i].css('width', width);
+				$items[i].css({'width': width, 'display': 'block'});
 
 				_getXY($items[i], len, function(left, top) {	
 
@@ -77,8 +77,7 @@
 
 			obj.container.find('.item').each(function(i) {
 				var $item = $(this);
-
-					$item.css('width',obj.itemWidth);
+					$item.css({'width': obj.itemWidth, 'display': 'block'});
 				_getXY($item, i, function(left, top) {
 
 					$item.css({'left': left, 'top': top});
