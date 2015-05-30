@@ -1,0 +1,38 @@
+/* some reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/*~~[end]~~*/
+
+
+/* css */
+body {
+	background: #C1E4FF;
+	padding: 20px 0;
+}
+
+.container {
+	width: 600px;
+	margin: 20px auto 0;
+	position: relative;
+}
+
+.item {
+	width: 33.33%;
+	position: absolute;
+}
+
+.item img {
+	display: block;
+	width: 100%;
+}
+
+/*~~[end]~~*/
