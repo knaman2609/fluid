@@ -1,11 +1,11 @@
 var fluid,
 	$item,
-	item = $('.container_inner .item');
+	items = $('.container_inner .item');
 
-item.css('display', 'block');
+items.css('display', 'none');
 imagesLoaded($('.container_inner'), function() {
 
-	item.css('display', 'block');
+	items.css('display', 'block');
 	$('.load').css('display', 'none');
 
 	fluid = new $('.container_inner').fluid({col: 3, spacingX: 20, spacingY: 20	});
